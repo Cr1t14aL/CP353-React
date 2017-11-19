@@ -30,6 +30,6 @@ export const publishPost = (title, content) => {
   export const getAllPosts = () => {
     return axiosInstance.get('/api/post/all/')
       .then(response => response.data)
-      .catch(error => { throw(error.response) })
+      .catch(error => { throw(error.response) }) //aa
   }
   
